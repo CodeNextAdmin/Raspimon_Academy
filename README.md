@@ -3,6 +3,10 @@
 
 Welcome to your Raspimon on your Raspberry Pi. This quick guide will help you get started. 
  
+## How to download code from GitHub
+Locate the green "Code" button on the right side of the page near the "About" section
+Select that option and download zip
+Extract zip files to /home/pi/Desktop
 
 ## What is in this folder?
 
@@ -22,7 +26,7 @@ You will also find
 ## How to progress
 Start with Stage 1, where you will begin by running welcome.py, your first script using Thonny, a Python editing tool that will also run all of your scripts.
 
-Simply open the Stage1 Raspimon folder (/home/pi/Desktop/Raspimon/Stage1) and right-click 
+Simply open the Stage1 Raspimon folder (/home/pi/Desktop/Raspimon_Academy-main/Stage1) and right-click 
 on welcome.py. Choose Thonny Python IDE to open the file with.
 
 Follow the labs at https://codenext.withgoogle.com/curriculum
