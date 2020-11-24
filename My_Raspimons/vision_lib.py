@@ -3,7 +3,7 @@ from google.cloud import vision
 import cv2
 import my_raspimon
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'CodeNextVisionTest.json' #replace your_file_here with your Google cloud project credential JSON file name (follow setup)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'RaspimonTestSA.json' #replace your_file_here with your Google cloud project credential JSON file name (follow setup)
 client = vision.ImageAnnotatorClient()
 
 def get_object(image_path):

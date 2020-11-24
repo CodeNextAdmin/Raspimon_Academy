@@ -5,7 +5,7 @@ import raspimon_sees
 import raspimon_reads
 import raspimon_faces
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'CodeNextVisionTest.json' #replace your_file_here with your Google cloud project credential JSON file name (follow setup)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'RaspimonTestSA.json' #replace your_file_here with your Google cloud project credential JSON file name (follow setup)
 client = vision.ImageAnnotatorClient()
 
 def get_object(image_path):
