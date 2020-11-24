@@ -4,9 +4,9 @@
 Welcome to your Raspimon on your Raspberry Pi. This quick guide will help you get started. 
  
 ## How to download code from GitHub
--a Locate the green "Code" button on the right side of the page near the "About" section
--a Select that option and download zip
--a Extract zip files to /home/pi/Desktop
+- a Locate the green "Code" button on the right side of the page near the "About" section
+- a Select that option and download zip
+- a Extract zip files to /home/pi/Desktop
 
 ## What is in this folder?
 
@@ -19,9 +19,9 @@ You will also find
 
 - a colors.txt file that has several colors you can use. Not all colors look good on an RGB LED, so these have been selected for you. Feel free to add others, however all the Raspimons in this activites will use this color palette. This file is purely for reference. 
 
--a My_Raspimons folder where you will find a sample_raspimon.py file to show a very basic build and another emptier file called my_raspimon.py which you will use to build your first Raspimon.
+- a My_Raspimons folder where you will find a sample_raspimon.py file to show a very basic build and another emptier file called my_raspimon.py which you will use to build your first Raspimon.
 
--a Bestiary where you can get samples of Raspimon models to use or modify. The bestiary is in the form of a Python script that loops through all the examples, but you can also use the PDF version to copy and paste. 
+- a Bestiary where you can get samples of Raspimon models to use or modify. The bestiary is in the form of a Python script that loops through all the examples, but you can also use the PDF version to copy and paste. 
 
 ## How to progress
 Start with Stage 1, where you will begin by running welcome.py, your first script using Thonny, a Python editing tool that will also run all of your scripts.
