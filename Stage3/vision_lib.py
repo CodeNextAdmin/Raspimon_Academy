@@ -5,7 +5,7 @@ import raspimon_sees
 import raspimon_reads
 import raspimon_faces
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'RaspimonTestSA.json' #replace your_file_here with your Google cloud project credential JSON file name (follow setup)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'RASPSA.json'
 client = vision.ImageAnnotatorClient()
 
 def get_object(image_path):
@@ -16,7 +16,10 @@ def get_object(image_path):
     response = client.label_detection(image=image) #full response from Google cloud vision
     label_annotations = response.label_annotations #array of objects labeled
     description = label_annotations[0].description #get description of one object
-    return description
+    if description:
+        return description
+    else:
+        return 'could not detect object'
 
 def get_emotion(image_path):
     with io.open(image_path, 'rb') as image_file:
@@ -32,10 +35,14 @@ def get_emotion(image_path):
             return 'happy'
         elif str(face.anger_likelihood) == 'Likelihood.LIKELY' or str(face.anger_likelihood) == 'Likelihood.VERY_LIKELY':
             return 'angry'
+        elif str(face.sorrow_likelihood) == 'Likelihood.LIKELY' or str(face.sorrow_likelihood) == 'Likelihood.VERY_LIKELY':
+            return 'sad'
+        elif str(face.surprise_likelihood) == 'Likelihood.LIKELY' or str(face.surprise_likelihood) == 'Likelihood.VERY_LIKELY':
+            return 'surprised'
         else:
-            return 'idk'
+            return 'could not detect emotion'
     else: #no faces detected
-        return ''
+        return 'could not detect face'
 
 def get_writing(image_path):
     with io.open(image_path, 'rb') as image_file:
@@ -44,7 +51,10 @@ def get_writing(image_path):
     image = vision.Image(content=content)
     response = client.document_text_detection(image=image) #full response from Google cloud vision
     text = response.full_text_annotation.text #text detected
-    return text
+    if text:
+        return text
+    else:
+        return 'could not detect text'
 
 def get_image_from_frame(cap):
     ret, frame = cap.read()
