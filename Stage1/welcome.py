@@ -6,11 +6,12 @@ from time import sleep
 
 print("Hello! Welcome to the Raspimon training academy.")
 
+
 #We can import other Python code to help us. Sleep is like a pause in the code.
 #Change the value inside the sleep() function call to change the pause amount.
 sleep(1) 
 
-print("Let's get started!")
+print("Brought to you by Google's Code Next")
 
 sleep(1.5)
 
@@ -25,9 +26,13 @@ sleep(1)
 #Use the name in a new print statement. You can combine strings with the + symbol.
 print("Nice to meet you, " + name)
 
-sleep(1)
+fav_color =input("what's your favorite color?")
+
+sleep(.25)
 
 print("I think you are ready to meet your Raspimon in Lab 2.")
+
+
 
 
 
