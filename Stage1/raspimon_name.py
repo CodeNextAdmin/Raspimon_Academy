@@ -1,4 +1,4 @@
-from sense_emu import SenseHat   #import the SenseHat object from the sense_hat library
+from sense_hat import SenseHat   #import the SenseHat object from the sense_hat library
 from time import sleep
 
 #this is how you load the sense object so you can use it in this script.
