@@ -12,16 +12,15 @@ names.append("Lizardia")
 sense.show_message(names[1])
 
 #Colors:
-
 r = (255, 0, 0) # red to max value, no green or blue
 w = (255, 255, 255) #white is all colors maxed
 k = (0, 0, 0) #RGB black, but for LED it means off
+
+#define another color. Use one letter variable names to make it easy later
 g = (0, 255, 0)
 l = (128, 255, 128) #lightGreen
 y = (255, 255, 0) #yellow
 o = (255, 128, 0) #orange
-
-#define another color. Use one letter variable names to make it easy later
 
 raspimon = [
 k, k, k, k, k, k, k, k,
