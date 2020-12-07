@@ -34,6 +34,6 @@ sense.show_message("I'm still an egg!")
 
 
 #the sense object has functions we can use: set_pixels. The value in the parentheses should be the egg.
-sense.set_pixels(raspimon_egg)
+sense.set_pixels(egg)
 
 
