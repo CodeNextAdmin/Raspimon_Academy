@@ -54,6 +54,6 @@ You do not have to complete every lab, however some of the labs will have skills
 ## Stuck?
 You can always check the examples branch of this repo for solutions to all of the labs. Simply switch to the examples branch with this button above:
 
-![repo branch](https://drive.google.com/file/d/1VEPTV7OuP79JYiMSmHVJRG-goQOLxJEo/view?usp=sharing)
 
+![repo branch image](https://github.com/CodeNextAdmin/Raspimon_Academy/blob/main/example_branch?raw=true)
 
