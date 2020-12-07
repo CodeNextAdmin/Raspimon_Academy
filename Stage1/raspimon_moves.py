@@ -17,7 +17,7 @@ p = (128, 0, 128) #purple
 d = (255, 0, 128) #darkPink
 l = (128, 255, 128) #lightGreen
 
-raspimon = [
+open_eyes = [
 k, k, d, d, d, d, k, k,
 k, d, d, w, d, w, d, k,
 d, d, d, k, d, k, d, d,
@@ -28,7 +28,7 @@ r, r, r, r, p, p, p, p,
 k, k, k, k, k, k, k, k
 ]       
 
-raspimon2 =[
+closed_eyes =[
 k, k, d, d, d, d, k, k,
 k, d, d, d, d, d, d, k,
 d, d, d, d, d, d, d, d,
@@ -39,23 +39,25 @@ r, r, r, r, p, p, p, p,
 k, k, k, k, k, k, k, k
 ]
 
-sense.set_pixels(raspimon)
+sense.set_pixels(open_eyes)
 
 #Create animation below
-sense.set_pixels(raspimon2)
+sense.set_pixels(closed_eyes)
 sleep(.2)
-sense.set_pixels(raspimon2)
+sense.set_pixels(open_eyes)
 sleep(.2)
-sense.set_pixels(raspimon)
+sense.set_pixels(closed_eyes)
 sleep(.3)
-sense.set_pixels(raspimon2)
+sense.set_pixels(open_eyes)
 sleep(.2)
-sense.set_pixels(raspimon)
+sense.set_pixels(closed_eyes)
 sleep(.3)
-sense.set_pixels(raspimon2)
+sense.set_pixels(open_eyes)
 sleep(.2)
-sense.set_pixels(raspimon)
+sense.set_pixels(closed_eyes)
 sleep(.3)
+sense.set_pixels(open_eyes)
+sleep(.2)
 sense.flip_h()
 sleep(.4)
 sense.flip_h()
