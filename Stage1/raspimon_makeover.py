@@ -41,14 +41,16 @@ sense.set_pixel(3,4, [255,0,0])
 sleep(1.5)
 sense.show_message("changing form...")
 
-chirp1 = [k, k, k, k, k, k, k, k,
-          k, k, k, l, r, y, k, k,
-          k, k, k, l, l, k, k, k,
-          l, g, g, w, w, g, g, l,
-          k, l, g, w, w, l, g, k,
-          k, k, l, w, w, l, k, k,
-          k, k, k, l, l, k, k, k,
-          k, k, o, k, k, o, k, k]
+chirp1 = [
+ k, k, k, k, k, k, k, k,
+k, k, k, l, r, y, k, k,
+k, k, k, l, l, k, k, k,
+l, g, g, w, w, g, g, l,
+k, l, g, w, w, l, g, k,
+k, k, l, w, w, l, k, k,
+k, k, k, l, l, k, k, k,
+k, k, o, k, k, o, k, k
+]
 
    
 sense.set_pixels(chirp1)
