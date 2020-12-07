@@ -22,24 +22,26 @@ d = (255, 0, 128) #darkPink
 l = (128, 255, 128) #lightGreen
 
 #Raspimons
-open_eyes = [k, k, d, d, d, d, k, k,
-         k, d, d, w, d, w, d, k,
-         d, d, d, k, d, k, d, d,
-         d, d, r, d, d, d, r, d,
-         p, p, d, d, k, d, d, p,
-         k, r, r, d, d, d, p, k,
-         r, r, r, r, p, p, p, p,
-         k, k, k, k, k, k, k, k
+open_eyes = [
+k, k, d, d, d, d, k, k,
+k, d, d, w, d, w, d, k,
+d, d, d, k, d, k, d, d,
+d, d, r, d, d, d, r, d,
+p, p, d, d, k, d, d, p,
+k, r, r, d, d, d, p, k,
+r, r, r, r, p, p, p, p,
+k, k, k, k, k, k, k, k
 ]       
 
-closed_eyes =[k, k, d, d, d, d, k, k,
-         k, d, d, d, d, d, d, k,
-         d, d, d, d, d, d, d, d,
-         d, d, r, d, d, d, r, d,
-         p, p, d, d, k, d, d, p,
-         k, r, r, d, d, d, p, k,
-         r, r, r, r, p, p, p, p,
-         k, k, k, k, k, k, k, k
+closed_eyes =[
+k, k, d, d, d, d, k, k,
+k, d, d, d, d, d, d, k,
+d, d, d, d, d, d, d, d,
+d, d, r, d, d, d, r, d,
+p, p, d, d, k, d, d, p,
+k, r, r, d, d, d, p, k,
+r, r, r, r, p, p, p, p,
+k, k, k, k, k, k, k, k
 ]   
 
 def blink(amt):
@@ -55,8 +57,7 @@ def shuffle(amt):
         sleep(.3)
         sense.flip_h()
         sleep(.3)
-        
-            
+                    
     
 while True:
     blink(10) #blink 10 times
