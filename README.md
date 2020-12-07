@@ -51,5 +51,9 @@ Stage 4 is a final stage where you can begin to explore other ideas and extensio
 
 You do not have to complete every lab, however some of the labs will have skills that you might need later on, so it is a good idea to check them all out, even if you don't intend to complete them.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Stuck?
+You can always check the examples branch of this repo for solutions to all of the labs. Simply switch to the examples branch with this button above:
+
+![repo branch](https://drive.google.com/file/d/1VEPTV7OuP79JYiMSmHVJRG-goQOLxJEo/view?usp=sharing)
+
+
