@@ -22,7 +22,7 @@ $ bash setup.sh
 
 ```
 
-## What is in this folder?
+## What is in this repo?
 
 The Raspimon folder on the Desktop of your Pi contains everything you need. There are four stage folders, each with different activities or training labs for your Raspimon. Begin at Stage1, however feel free to explore the other files, if you are curious. 
 
