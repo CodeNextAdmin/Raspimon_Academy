@@ -8,6 +8,20 @@ Welcome to your Raspimon on your Raspberry Pi. This quick guide will help you ge
 - Select that option and download zip
 - Extract zip files to /home/pi/Desktop
 
+## Add the Libraries
+If you are not using this  [Raspimon Kit](https://www.pishop.us/product/raspimon-academy-kit/), then you will need to install a few Python libraries. After you download this repo, follow these steps in your Terminal (The Terminal Application is found on the main Menu bar):
+
+Go to the Raspimon_Academy directory, which should be on your Desktop by entering this command after the $:
+```bash
+$ cd /home/pi/Desktop/Raspimon_Academy
+
+```
+Install the libraries with this script:
+```bash
+$ bash setup.sh
+
+```
+
 ## What is in this folder?
 
 The Raspimon folder on the Desktop of your Pi contains everything you need. There are four stage folders, each with different activities or training labs for your Raspimon. Begin at Stage1, however feel free to explore the other files, if you are curious. 
