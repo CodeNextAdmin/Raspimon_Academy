@@ -3,7 +3,7 @@ from time import sleep
 import vision_lib
 
 #initialize your SenseHat instance below here
-
+sense = SenseHat()
 
 #paste your colors & Raspimon below here
 
@@ -15,7 +15,7 @@ import vision_lib
 def see_emotion(emotion):
     print(emotion)
     #your code below here
-
+    sense.show_message(emotion)
 
 
 if __name__ == '__main__':
