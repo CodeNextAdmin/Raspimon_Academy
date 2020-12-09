@@ -5,6 +5,7 @@ Welcome to your Raspimon on your Raspberry Pi. This quick guide will help you ge
  
 ## How to download code from GitHub
 - Locate the green "Code" button on the right side of the page near the "About" section
+   - **Note*: Use your touchscreen to navigate*
 - Select that option and download zip
 - Extract zip files to /home/pi/Desktop
 
