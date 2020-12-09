@@ -1,5 +1,6 @@
 from sense_hat import SenseHat
 from time import sleep
+import random
 
 sense = SenseHat()
 
@@ -32,6 +33,9 @@ tapped = [
 
 sense.set_pixels(rest) #set your own Raspimons here as default rest pose
 
+#some laugs:
+laughs =["!!!!", "haa!", "hohoho", "hee hee"]
+
 #add a while True: loop below
 while True:
     accel = sense.get_accelerometer_raw()
@@ -59,7 +63,8 @@ while True:
         print("Tap")
         sense.set_pixels(tapped)
         sleep(.5)
-         
+        random_choice = random.choice(laughs)
+        sense.show_message(random_choice)
         
 
  
