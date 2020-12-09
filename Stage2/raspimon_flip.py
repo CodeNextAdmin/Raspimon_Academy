@@ -1,8 +1,4 @@
-import sys
-sys.path.append("..")
-
 from sense_hat import SenseHat
-from raspimon_images import Raspimons
 from time import sleep
 
 sense = SenseHat()
@@ -24,7 +20,7 @@ raspimon1 = [
 
 raspimon2 = [
         k, k, k, k, k, k, k, k,
-        k, p, p, p, p, p, k, k,
+        k, p, p, p, p, p, p, k,
         k, p, k, k, k, k, p, k,
         k, p, w, k, w, k, p, k,
         k, p, k, w, k, k, p, k,
@@ -33,11 +29,7 @@ raspimon2 = [
         k, k, p, k, p, k, k, k
     ]
 
-
- 
-sense.set_pixels(raspimon1)
-
-
+sense.set_pixels(raspimon2)
 
 while True:
     orientation = sense.get_orientation()
@@ -45,16 +37,10 @@ while True:
     print(orientation)
        
     #declare a roll variable
+    roll = orientation["roll"]
     
-    
-    #write an if statement 
-
-        
-   
-   
-    
-    
-
-        
-    
+    #write an if statement
+    if roll > 120 and roll < 180:
+        print("rolled upside down!")
+        sense.flip_v()
 
