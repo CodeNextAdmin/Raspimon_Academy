@@ -1,8 +1,4 @@
-import sys
-sys.path.append("..")
-
 from sense_hat import SenseHat
-from raspimon_images import Raspimons
 from time import sleep
 
 sense = SenseHat()
