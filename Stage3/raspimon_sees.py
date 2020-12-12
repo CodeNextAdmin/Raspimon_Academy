@@ -6,15 +6,64 @@ import vision_lib
 sense = SenseHat()
 
 #paste your colors & Raspimon below here
+r = (255, 0, 0) #red
+g = (0, 255, 0) #green
+b = (0, 0, 255) #blue
+k = (0, 0, 0) #blank
+w = (255, 255, 255) #white
+c = (0, 255, 255) #cyan
+y = (255, 255, 0) #yellow
+o = (255, 128, 0) #orange
+n = (255, 128, 128) #pink
+p = (128, 0, 128) #purple
+d = (255, 0, 128) #darkPink
+l = (128, 255, 128) #lightGreen
 
+basic = [
+b, b, b, b, b, b, b, b,
+b, r, r, r, r, r, r, b,
+b, r, b, b, b, b, r, b,
+b, r, r, b, r, b, r, b,
+b, r, b, b, b, b, r, b,
+b, r, r, r, r, r, r, b,
+b, b, r, b, r, b, b, b,
+b, b, r, b, r, b, b, b
+]
+
+basic2= [
+k, k, k, k, k, k, k, k,
+k, k, w, w, w, w, w, w,
+k, w, w, k, k, k, k, w,
+w, k, w, k, w, k, w, w,
+k, k, w, k, k, p, k, w,
+k, k, w, w, w, w, w, w,
+k, k, k, k, w, k, w, k,
+k, k, k, w, k, w, k, k
+]
 
 #Show your Raspimon on the LED matrix below here
+sense.set_pixels(basic)
 
 
 def see_object(obj):
     print(obj)
     #your code below here
+    sense.set_pixels(basic)
+    sense.show_message('I see a...')
+    sleep(1)
     sense.show_message(obj)
+    sleep(1)
+    if obj == 'Game controller':
+        sense.show_message("Let’s play!")
+        sense.set_pixels(basic2)
+        sleep(2)
+        sense.set_pixels(basic)
+    elif obj == 'Apple':
+        sense.set_pixels(apple)
+        sense.show_message('nom nom nom nom')
+        sleep(1)
+        sense.show_message('Mmmmm yummy')
+        sense.set_pixels(basic)
 
 
 
