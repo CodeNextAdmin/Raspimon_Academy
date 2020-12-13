@@ -2,7 +2,7 @@
 Here are scripts & examples to improve your productivity.
 
 ## To clone the project from GitHub
-1. Create a new file at $HOME/Desktop/cloneRaspimon.sh by copying [cloneRaspimon.sh](./tools/cloneRaspimon.sh).
+1. Create a new file at $HOME/Desktop/cloneRaspimon.sh by copying [cloneRaspimon.sh](./cloneRaspimon.sh).
 2. Make it executable to run it at a Terminal.
 ```bash
 $ cd $HOME/Desktop
