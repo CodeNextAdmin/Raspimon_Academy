@@ -2,6 +2,8 @@ from sense_hat import SenseHat   #import the SenseHat object from the sense_hat 
 from time import sleep 
 from signal import pause
 
+sense = SenseHat()
+
 #declare variables
 g = (0, 255, 0)
 r = (255, 0, 0)
