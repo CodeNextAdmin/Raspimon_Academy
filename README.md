@@ -1,10 +1,7 @@
 # Raspimon Academy
+The Raspimon Academy project was developed by Google's Code Next program for CS Ed Week (2020). This guide will help you get started. You will need a Raspberry Pi, and a SenseHat unit, along with an SD card with the [Raspberry Pi OS](https://www.raspberrypi.org/software/). 
 
-
-
-# Welcome
-
-Welcome to your Raspimon on your Raspberry Pi. This quick guide will help you get started. 
+The activities and challenges will teach you some basic Python programming, as well as some concepts in computer vision and creative computing. Have coding! 
  
 ## How to download code from GitHub
 - Locate the green "Code" button on the right side of the page near the "About" section
